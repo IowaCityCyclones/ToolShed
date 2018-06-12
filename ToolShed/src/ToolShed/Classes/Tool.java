@@ -48,7 +48,8 @@ public class Tool extends Item implements Items{
 	 * converts a tool object to a document to add to the collection
 	 */
 	public BasicDBObjectBuilder toolToDocument() {
-		BasicDBObjectBuilder Document = new BasicDBObjectBuilder().start();
+		new BasicDBObjectBuilder();
+		BasicDBObjectBuilder Document = BasicDBObjectBuilder.start();
 		Document.add("Name", this.getName());
 		Document.add("hasToolbox", this.getToolboxStatus());
 		Document.add("SKU", this.getSKU());

@@ -6,9 +6,6 @@ package ToolShed;
 import java.net.UnknownHostException;
 import java.time.LocalDate;
 
-import org.bson.Document;
-
-import com.mongodb.BasicDBObjectBuilder;
 import com.mongodb.DB;
 import com.mongodb.DBCollection;
 import com.mongodb.DBCursor;
@@ -47,9 +44,9 @@ public class ToolShed {
 			DBCursor cursor = Shed.find();
 			
 			while(cursor.hasNext()) {
-				int i=1;
+				//int i=1;
 				System.out.println(cursor.next());
-				i++;
+				//i++;
 			}
 		} catch (UnknownHostException e) {
 			e.printStackTrace();
